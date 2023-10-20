@@ -3,8 +3,6 @@ var app = express();
 var fs = require("fs");
 // Jovell Christian Q. Miranda.
 //BSIT-3A
-
-
 var song = {
    "song7" : {
       "Title" : "Oksihina ",
@@ -29,7 +27,6 @@ app.post('/addSong', function (req, res) {
        data = JSON.parse( data );
        data["song7"] = song["song7"];
        console.log( data );
-       
        res.end( JSON.stringify(data));
     });
 })
@@ -49,7 +46,6 @@ app.delete('/deleteSong', function (req, res) {
    fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
       data = JSON.parse( data );
       delete data["song2"];
-       
       console.log( data );
       res.end( JSON.stringify(data));
    });
@@ -60,7 +56,6 @@ app.delete('/deleteSong/:id', function (req, res) {
     fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
        delete data["song" + req.params.id];
-        
        console.log( data );
        res.end( JSON.stringify(data));
     });
