@@ -1,7 +1,7 @@
 {
     "song1" : {
        "Title" : "Ulap",
-       "Lyrics by" : "Rob Deniel",
+       "Artist" : "Rob Deniel",
        "Release Date" : "2021",
        "Genre":"Pop",
        "Link":"https://www.youtube.com/watch?v=nXOe-p94AQI&t=2s",
@@ -10,7 +10,7 @@
     
     "song2" : {
         "Title" : "I Choose You",
-        "Lyrics by" : "Ryann Darling",
+        "Artist" : "Ryann Darling",
         "Release Date" : "2016",
         "Genre":"Pop",
         "Link":"https://www.youtube.com/watch?v=fXN-m49MHO0",
@@ -19,7 +19,7 @@
     
      "song3" : {
         "Title" : "Giants",
-        "Lyrics by" : "Neoni",
+        "Artist" : "Neoni",
         "Release Date" : "2019",
         "Genre":"Alternative/Indie",
         "Link":"https://www.youtube.com/watch?v=bWiZweZi-YE",
@@ -27,7 +27,7 @@
      },
       "song4" : {
         "Title" : "Musika",
-        "Lyrics by" : "Dionela",
+        "Artist" : "Dionela",
         "Release Date" : "2022",
         "Genre":"Pop",
         "Link":"https://www.youtube.com/watch?v=5Uuq9dTBXII",
@@ -35,7 +35,7 @@
      },
       "song5" : {
          "Title" : "Sugal ",
-         "Lyrics by" : "Dionela",
+         "Artist" : "Dionela",
          "Release Date" : "2021",
          "Genre":"Vietnamese Pop",
          "Link":"https://www.youtube.com/watch?v=Iw5kg_LlGhg",
@@ -43,10 +43,18 @@
    },
       "song6" : {
          "Title" : "Gusto ",
-         "Lyrics by" : "Zack Tabudlo & Al James",
+         "Artist" : "Zack Tabudlo & Al James",
          "Release Date" : "2023",
          "Genre":"R&B",
          "Link":"https://www.youtube.com/watch?v=RztIyWaA7ck",
          "id": 6
-   }
+   }, 
+   "song7" : {
+      "Title" : "Stranger ",
+      "Artist" : "Kenya Grace",
+      "Release Date" : "2023",
+      "Genre":"Drum 'N' Bass",
+      "Link":"https://www.youtube.com/watch?v=S2TaAcwC_zI",
+      "id": 7
+}
 }
