@@ -13,7 +13,7 @@ var song = {
 }
 //Show the list
 app.get('/listSongs', function (req, res) {
-   fs.readFile( __dirname + "/" + "Songs.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
       console.log( data );
       res.end( data );
    });
@@ -21,7 +21,7 @@ app.get('/listSongs', function (req, res) {
 //Add Song
 app.post('/addSong', function (req, res) {
     // First read existing songs.
-    fs.readFile( __dirname + "/" + "Songs.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
        data["song8"] = song["song8"];
        console.log( data );
@@ -31,7 +31,7 @@ app.post('/addSong', function (req, res) {
 //Show specific song
 app.get('/:id', function (req, res) {
     // First read existing songs.
-    fs.readFile( __dirname + "/" + "Songs.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
        var songs = JSON.parse( data );
        var song = songs["song" + req.params.id];
        console.log( song );
@@ -41,7 +41,7 @@ app.get('/:id', function (req, res) {
 //Delete a Song
 app.delete('/deleteSong', function (req, res) {
    // First read existing songs.
-   fs.readFile( __dirname + "/" + "Songs.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
       data = JSON.parse( data );
       delete data["song5"];
       console.log( data );
@@ -51,7 +51,7 @@ app.delete('/deleteSong', function (req, res) {
 //delete specific song
 app.delete('/deleteSong/:id', function (req, res) {
     // First read existing songs.
-    fs.readFile( __dirname + "/" + "Songs.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "songs.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
        delete data["song" + req.params.id];
        console.log( data );
